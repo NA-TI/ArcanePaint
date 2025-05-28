@@ -41,36 +41,6 @@
 
 ---
 
-## 🖼️ Visual Guide
-
-<!-- Replace the image paths below with your actual screenshots if available -->
-<p align="center">
-  <img src="docs/images/before_after.png" width="400"/>
-  <br><em>Left: Original model. Right: After applying ArcanePaint shader</em>
-</p>
-
-<p align="center">
-  <img src="docs/images/panel.png" width="400"/>
-  <br><em>The ArcanePaint panel in the 3D View sidebar</em>
-</p>
-
-<p align="center">
-  <img src="docs/images/texture_settings.png" width="400"/>
-  <br><em>Texture projection settings panel with scale and blend controls</em>
-</p>
-
-<p align="center">
-  <img src="docs/images/performance_settings.png" width="400"/>
-  <br><em>Performance optimization settings</em>
-</p>
-
-<p align="center">
-  <img src="docs/images/gpu_settings.png" width="400"/>
-  <br><em>GPU acceleration settings and status</em>
-</p>
-
----
-
 ## 🖥️ Requirements
 
 - Blender 4.4 or higher
