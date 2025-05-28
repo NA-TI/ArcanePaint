@@ -1,58 +1,96 @@
-# ArcanePaint - Blender Add-on
+<p align="center">
+  <h1 align="center">🎨 ArcanePaint - Blender Add-on</h1>
+  <p align="center"><em>Seamless Arcane-style shading, GPU acceleration, and optimized performance for Blender 4.4+</em></p>
 
-ArcanePaint is a powerful Blender add-on that creates seamless, hand-painted Arcane-style shading for 3D models. It provides advanced texture projection, GPU acceleration, and optimized performance features.
+  <p align="center">
+    <img src="https://img.shields.io/badge/blender-4.4%2B-orange" alt="Blender 4.4+"/>
+    <img src="https://img.shields.io/badge/gpu-acceleration-blue" alt="GPU Acceleration"/>
+    <img src="https://img.shields.io/badge/python-3.7%2B-yellow" alt="Python 3.7+"/>
+    <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License"/>
+    <img src="https://img.shields.io/badge/last%20update-2024-blue" alt="Last Update"/>
+  </p>
+</p>
 
-## Features
+---
 
-- **Seamless Texture Projection**: Triplanar mapping with UV blend support
-- **GPU Acceleration**: Metal and OptiX support for faster processing
-- **Performance Optimizations**: Multi-threading, memory management, and caching
-- **Material Preview**: Enhanced material visualization
-- **Geometry Nodes**: Advanced mesh operations support
+## 🌐 About
 
-## Visual Guide
+**ArcanePaint** is a powerful Blender add-on for creating seamless, hand-painted Arcane-style shading on 3D models. It features advanced texture projection, GPU acceleration, and performance optimizations for artists and technical users alike.
 
-### Before and After Examples
+---
 
-![Before and After Comparison](docs/images/before_after.png)
-*Left: Original model. Right: After applying ArcanePaint shader*
+### 🧰 Tools & Technologies
 
-### Interface Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Blender-4.4%2B-orange?logo=blender&logoColor=white" alt="Blender"/>
+  <img src="https://img.shields.io/badge/Python-3.7%2B-yellow?logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/NumPy-1.21%2B-blue?logo=numpy&logoColor=white" alt="NumPy"/>
+  <img src="https://img.shields.io/badge/Metal/OptiX-GPU-blue" alt="Metal/OptiX"/>
+  <img src="https://img.shields.io/badge/Geometry%20Nodes-advanced-lightgrey" alt="Geometry Nodes"/>
+</p>
 
-![ArcanePaint Panel](docs/images/panel.png)
-*The ArcanePaint panel in the 3D View sidebar*
+---
 
-### Texture Projection Settings
+## ⚙️ Features
 
-![Texture Projection Settings](docs/images/texture_settings.png)
-*Texture projection settings panel with scale and blend controls*
+- 🖌️ **Seamless Texture Projection**: Triplanar mapping with UV blend support
+- 🚀 **GPU Acceleration**: Metal (macOS) & OptiX (NVIDIA) support
+- ⚡ **Performance Optimizations**: Multi-threading, memory management, and caching
+- 👁️ **Material Preview**: Enhanced material visualization
+- 🧩 **Geometry Nodes**: Advanced mesh operations
 
-### Performance Settings
+---
 
-![Performance Settings](docs/images/performance_settings.png)
-*Performance optimization settings*
+## 🖼️ Visual Guide
 
-### GPU Acceleration
+<!-- Replace the image paths below with your actual screenshots if available -->
+<p align="center">
+  <img src="docs/images/before_after.png" width="400"/>
+  <br><em>Left: Original model. Right: After applying ArcanePaint shader</em>
+</p>
 
-![GPU Settings](docs/images/gpu_settings.png)
-*GPU acceleration settings and status*
+<p align="center">
+  <img src="docs/images/panel.png" width="400"/>
+  <br><em>The ArcanePaint panel in the 3D View sidebar</em>
+</p>
 
-## Requirements
+<p align="center">
+  <img src="docs/images/texture_settings.png" width="400"/>
+  <br><em>Texture projection settings panel with scale and blend controls</em>
+</p>
+
+<p align="center">
+  <img src="docs/images/performance_settings.png" width="400"/>
+  <br><em>Performance optimization settings</em>
+</p>
+
+<p align="center">
+  <img src="docs/images/gpu_settings.png" width="400"/>
+  <br><em>GPU acceleration settings and status</em>
+</p>
+
+---
+
+## 🖥️ Requirements
 
 - Blender 4.4 or higher
 - Python 3.7 or higher
 - NumPy 1.21.0 or higher
 - GPU with Metal (macOS) or OptiX (NVIDIA) support (optional but recommended)
 
-## Installation
+---
+
+## 🚀 Installation
 
 1. Download the ArcanePaint add-on files
 2. Open Blender
 3. Go to Edit > Preferences > Add-ons
-4. Click "Install" and select the ArcanePaint folder
+4. Click "Install" and select the ArcanePaint zip file
 5. Enable the add-on by checking its checkbox
 
-## Usage
+---
+
+## 📝 Usage
 
 ### Basic Workflow
 
@@ -60,93 +98,53 @@ ArcanePaint is a powerful Blender add-on that creates seamless, hand-painted Arc
 2. Select the model in the viewport
 3. Open the ArcanePaint panel (N key > ArcanePaint tab)
 4. Adjust the settings:
-   - Scale: Adjust the texture scale (default: 1.0)
-   - Blend Factor: Control the blend between UV and triplanar mapping (0.0 to 1.0)
-   - Use GPU: Enable/disable GPU acceleration
-   - Number of Threads: Set how many threads to use for processing (1-16)
+   - **Scale**: Adjust the texture scale (default: 1.0)
+   - **Blend Factor**: Control the blend between UV and triplanar mapping (0.0 to 1.0)
+   - **Use GPU**: Enable/disable GPU acceleration
+   - **Number of Threads**: Set how many threads to use for processing (1-16)
 5. Click "Apply Texture Projection"
 
-![Basic Workflow](docs/images/workflow.gif)
-*Step-by-step workflow demonstration*
+<!-- Replace with your actual workflow GIF if available -->
+<p align="center">
+  <img src="docs/images/workflow.gif" width="400"/>
+  <br><em>Step-by-step workflow demonstration</em>
+</p>
 
-### Performance Settings
+---
 
-The add-on automatically optimizes:
-- Viewport performance
-- Memory usage
-- GPU acceleration
-- Multi-threading
+### Performance & Advanced Features
 
-### Advanced Features
+- **GPU Acceleration**: Metal (macOS), OptiX (NVIDIA), custom shaders, and screen space reflections
+- **Memory Management**: Automatic caching, cleanup, and GPU memory optimization
+- **Thread Management**: Multi-threading for faster processing
 
-#### GPU Acceleration
-The add-on automatically uses GPU features when available:
-- Metal (on macOS)
-- OptiX (on NVIDIA GPUs)
-- Screen Space Reflections
-- Custom shaders for better performance
+---
 
-#### Memory Management
-The add-on automatically:
-- Caches frequently used data
-- Cleans up unused resources
-- Manages GPU memory
-- Optimizes viewport performance
+## 💡 Tips for Best Performance
 
-## Tips for Best Performance
+- Enable GPU acceleration if you have a compatible GPU
+- Adjust thread count based on your CPU (default: 4)
+- Use blend factor to balance between UV and triplanar mapping
+- Let the add-on handle memory management automatically
 
-1. **GPU Usage**:
-   - Enable GPU acceleration if you have a compatible GPU
-   - Use Metal on macOS or OptiX on NVIDIA GPUs
-   - Ensure your GPU drivers are up to date
+---
 
-2. **Thread Management**:
-   - Set the number of threads based on your CPU
-   - Default is 4 threads, adjust based on your system
-   - More threads don't always mean better performance
+## 🛠️ Troubleshooting
 
-3. **Texture Mapping**:
-   - Use the blend factor to balance between UV and triplanar mapping
-   - Higher blend factors favor triplanar mapping
-   - Lower blend factors favor UV mapping
+**Common Issues:**
+- Performance: Lower thread count, disable GPU, check UV maps, ensure enough memory
+- GPU: Check compatibility, update drivers, verify Metal/OptiX support
+- Memory: Reduce objects, clear unused data, restart Blender
 
-4. **Memory Optimization**:
-   - Let the add-on handle memory management automatically
-   - The add-on will clean up unused resources
-   - Cache size is limited to prevent memory bloat
+**Error Messages:**
+- "GPU not available": GPU not compatible or drivers outdated
+- "Memory limit exceeded": System memory is running low
+- "Thread count invalid": Number of threads is outside valid range
+- "UV map missing": Model needs UV maps for proper blending
 
-## Troubleshooting
+---
 
-### Common Issues
-
-1. **Performance Issues**:
-   - Reduce the number of threads
-   - Disable GPU acceleration
-   - Check if your model has proper UV maps
-   - Ensure you have enough system memory
-
-2. **GPU Acceleration Not Working**:
-   - Check if your GPU is compatible
-   - Update your GPU drivers
-   - Verify Metal/OptiX support
-   - Check Blender's GPU settings
-
-3. **Memory Issues**:
-   - Reduce the number of objects being processed
-   - Clear unused data blocks
-   - Restart Blender if memory usage is high
-   - Check system memory availability
-
-### Error Messages
-
-- **"GPU not available"**: Your GPU is not compatible or drivers are outdated
-- **"Memory limit exceeded"**: System memory is running low
-- **"Thread count invalid"**: Number of threads is outside valid range
-- **"UV map missing"**: Model needs UV maps for proper blending
-
-## Development
-
-### Project Structure
+## 🗂️ Project Structure
 
 ```
 ArcanePaint/
@@ -164,46 +162,49 @@ ArcanePaint/
     └── test_addon.py
 ```
 
-### Contributing
+---
+
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
 4. Submit a pull request
 
-### Building from Source
+---
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run tests:
-   ```bash
-   python -m unittest tests/test_addon.py
-   ```
+## 🏗️ Building from Source
 
-## License
+```bash
+git clone <repo-url>
+pip install -r requirements.txt
+python -m unittest tests/test_addon.py
+```
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+---
 
-## Acknowledgments
+## 📄 License
 
-- Blender Foundation for the amazing 3D software
-- The Blender Python API community
-- Contributors and testers of the add-on
+This project is licensed under the **MIT License**.
 
-## Support
+---
 
-For support, please:
-1. Check the troubleshooting section
-2. Search existing issues
-3. Create a new issue if needed
+## 🙏 Acknowledgments
 
-## Version History
+- Blender Foundation
+- Blender Python API community
+- Contributors and testers
 
-- 1.0.0: Initial release
-  - Basic texture projection
-  - GPU acceleration
-  - Performance optimizations
-  - Memory management
+---
+
+## 🆘 Support
+
+- Check the troubleshooting section
+- Search existing issues
+- Create a new issue if needed
+
+---
+
+## 🕒 Version History
+
+- 1.0.0: Initial release (texture projection, GPU acceleration, performance optimizations, memory management)
